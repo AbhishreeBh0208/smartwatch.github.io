@@ -1,0 +1,117 @@
+body{
+background-size: cover;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1001
+}
+
+nav {
+  display: block;
+  text-align: left-top;
+  background-color: black;
+}
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.navbar a {
+  display:block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1px 0 #000;
+  position: relative;
+}
+.navbar{
+  vertical-align: top;
+  display: inline-block;
+
+}
+.navbar li {
+  position: relative;
+}
+.navbar > li {
+  float: left;
+  border-bottom: 4px #aaa solid;
+  margin-right: 1px;
+}
+.navbar > li > a {
+  margin-bottom: 1px;
+}
+.navbar > li:hover,
+.navbar > li:hover > a {
+  border-bottom-color: red;
+}
+
+.navbar li:hover > a {
+  color:red;
+}
+.navbar > li:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.navbar > li:first-child > a {
+  border-radius: 4px 0 0 0;
+}
+.navbar > li:last-child {
+  border-radius: 0 0 4px 0;
+  margin-right: 0;
+}
+.navbar > li:last-child > a {
+  border-radius: 0 4px 0 0;
+}
+.navbar li li a {
+  margin-top: 1px;
+}
+
+.navbar ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid  red;
+  z-index: 1;
+  left: -99999em;
+}
+.navbar > li:hover > ul {
+  left: auto;
+  margin-top: 5px;
+  min-width: 100%;
+}
+.navbar > li li:hover > ul {
+  left: 100%;
+  margin-left: 1px;
+  top: -1px;
+}
+.navbar > li > a:first-child:nth-last-child(2):before {
+  border-top-color: #aaa;
+}
+.navbar > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent;
+  border-bottom-color: red;
+  margin-top:-5px
+}
+.navbar li li > a:first-child:nth-last-child(2):before {
+  border-left-color: #aaa;
+  margin-top: -5px
+}
+.navbar li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent;
+  border-right-color: red;
+  right: 10px;
+}
+
+.navbar li a:first-child:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  top: 50% ;
+  right:5px;
+ }
